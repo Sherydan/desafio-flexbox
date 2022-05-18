@@ -19,13 +19,13 @@
     flex-direction: column;
     width: 20vw;
     height: 100%;
-    padding: 1rem;
 }
 
 .current-user{
     display: flex;
     justify-content: space-between;
-    height: 10vh;
+    height: 10%;
+    border: 1px solid black;
 }
 /* 
 .user-details{
@@ -68,7 +68,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 20%;
+    border: 1px solid black;
 }
 
 .main{
@@ -87,5 +88,12 @@
     max-height: 40%;
     margin-bottom: 1rem;
     
+}
+
+.contact{
+    border: 1px solid black;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: calc(70% / 8);
 }
 
