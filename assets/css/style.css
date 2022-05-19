@@ -92,6 +92,17 @@
     border: 1px solid black;
 }
 
+.new-chat-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    width: 70%;
+    background-color: #a491d2;
+    color: #fff;
+    font-family: robotoRegular;
+}
+
 .main{
     display: flex;
     flex-direction: column;
