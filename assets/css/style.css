@@ -172,6 +172,11 @@
     height: calc(70% / 8);
     padding: 0.3rem;
     font-family: openSansRegular;
+    cursor: pointer;
+}
+
+.contact:hover{
+    background-color: #e8ebe4;
 }
 
 /* dark theme */
@@ -180,9 +185,22 @@
     color: white;
 }
 
-.dark-theme-contact-borders{
+.dark-theme-contact {
     border: 2px solid #E8EBE4;
+    
+    
 }
+
+.dark-theme-contact .contact:hover{
+    background-color: #616161;
+
+}
+
+
+
+
+
+
 
 /* dark mode switch css, COPY PASTE MODE ON HERE */
 
