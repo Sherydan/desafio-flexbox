@@ -2,23 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
 
 @font-face {
     font-family: robotoBold;
     src: url(../fonts/Roboto-Bold.ttf);
-  }
+}
 
   @font-face {
     font-family: openSansRegular;
     src: url(../fonts/OpenSans-Regular.ttf);
-  }
+}
 
   @font-face {
     font-family: robotoRegular;
     src: url(../fonts/Roboto-Regular.ttf);
-  }
+}
 
   /* main container */
 .container{
@@ -103,7 +102,6 @@
     align-items: center;
     justify-content: space-around;
 }
-
 
 /* new chat container */
 .new-chat{
