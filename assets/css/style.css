@@ -126,7 +126,7 @@
     font-family: robotoRegular;
     /* disable cursor when user hovers around text */
     user-select: none;
-    /* change pointer to give a better idea that "THIS IS A BUTTON" */
+    /* change pointer to give a better feeling that "THIS IS A BUTTON" */
     cursor: pointer;
 }
 
