@@ -20,7 +20,7 @@
     src: url(../fonts/Roboto-Regular.ttf);
   }
 
-
+  /* main container */
 .container{
     display: flex;
     margin: 0 auto;
@@ -28,48 +28,53 @@
     height: 94vh;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    /* im a big fan of shadows lol */
     box-shadow: 0px 1px 13px 2px #000000;
 }
 
+/* main contact secition */
 .contacts{
     display: flex;
     flex-direction: column;
     width: 15vw;
     height: 100%;
+    border-right: 2px solid #E8EBE4;
 }
 
+/* defines properties for current logged user */
 .current-user{
     display: flex;
     justify-content: space-between;
     height: 10%;
-    border: 1px solid black;
+    border-bottom: 2px solid #E8EBE4;
     padding: 0.3rem;
     font-family: openSansRegular;
 }
 
+/* thumbnail size for contact list */
 .small-thumbnail{
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
 }
 
+/* thumbnail size for logged user */
 .active-user-thumbnail{
     max-width: 70%;
     max-height: 70%;
     border-radius: 50%;
 }
 
+/* font sizes */
 .font-xs{
     font-size: 10px;
-    
 }
 
 .font-sm{
     font-size: 14px;
 }
 
-
-
+/* container for logged user info */
 .user-details-info{
     height: 100%;
     display: flex;
@@ -77,10 +82,20 @@
     margin-left: 1rem;
 }
 
+/* properties for users status and name */
 .user-details-text{
     margin-left: 0.5rem;
 }
 
+/* 
+    uses nth-child(2) to select the 2nd <p> from .user-details-text.
+    maybe its an overkill, but i want to try it.
+*/
+.current-user .user-details-text p:nth-child(2){
+    color: #BEC1BB;
+}
+
+/* properties for the two icons alongside the logged user  */
 .user-details-menu{
     display: flex;
     width: 30%;
@@ -89,14 +104,17 @@
     justify-content: space-around;
 }
 
+
+/* new chat container */
 .new-chat{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20%;
-    border: 1px solid black;
+    border-bottom: 2px solid #E8EBE4;
 }
 
+/* new chat button properties */
 .new-chat-button{
     display: flex;
     justify-content: center;
@@ -106,8 +124,22 @@
     background-color: #a491d2;
     color: #fff;
     font-family: robotoRegular;
+    /* disable cursor when user hovers around text */
+    user-select: none;
+    /* change pointer to give a better idea that "THIS IS A BUTTON" */
+    cursor: pointer;
 }
 
+/* button states */
+.new-chat-button:hover{
+    background-color: #cdc3e6;
+}
+
+.new-chat-button:focus{
+    background-color: #bec1bb;
+}
+
+/* main section container */
 .main{
     display: flex;
     flex-direction: column;
@@ -115,20 +147,30 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
     font-family: robotoRegular;
-
+    background: #f6f8f5;
 }
 
+/* main section text sizes */
+.main h1{
+    font-size: 3rem;
+}
+
+.main p{
+    width: 50%;
+}
+
+/* main section image properties */
 .main img{
-    max-width: 40%;
-    max-height: 40%;
+    max-width: 30%;
+    max-height: 30%;
     margin-bottom: 1rem;
-    
 }
 
+/* properties for contacts card */
 .contact{
-    border: 1px solid black;
+    border-bottom: 2px solid #E8EBE4;
     height: calc(70% / 8);
     padding: 0.3rem;
     font-family: openSansRegular;
